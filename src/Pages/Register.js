@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 export default function RegisterPage(){
-    const navigate=useNavigate()
 
     const [user,setUser]=useState(
         {
@@ -24,6 +22,7 @@ e.preventDefault();
     return(<>
 
     <div className="container">
+        <form onSubmit={onsubmit}>
         <div className="row  justify-content-center ">
             <div className="col-md-4 p-4 text-center bg-warning shadow">
                 <h3>Register User</h3>
@@ -58,6 +57,7 @@ e.preventDefault();
               
             </div> 
         </div>
+        </form>
     </div>
     </>)
 }
