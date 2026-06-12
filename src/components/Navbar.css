@@ -1,0 +1,27 @@
+body {
+  overflow-x: hidden;
+}
+
+.form-control {
+  min-width: 200px;
+}
+
+@media (max-width: 576px) {
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .form-control {
+    min-width: 120px;
+  }
+}
